@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D58E03526EFF4410072D1D0 /* BranchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D58E03426EFF4410072D1D0 /* BranchViewController.swift */; };
 		438DD74926EE84C000F3BC30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438DD74826EE84C000F3BC30 /* AppDelegate.swift */; };
 		438DD74B26EE84C000F3BC30 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438DD74A26EE84C000F3BC30 /* SceneDelegate.swift */; };
 		438DD74D26EE84C000F3BC30 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438DD74C26EE84C000F3BC30 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D58E03426EFF4410072D1D0 /* BranchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchViewController.swift; sourceTree = "<group>"; };
 		438DD74526EE84C000F3BC30 /* CalculationOfFigureApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalculationOfFigureApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		438DD74826EE84C000F3BC30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		438DD74A26EE84C000F3BC30 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				438DD74826EE84C000F3BC30 /* AppDelegate.swift */,
 				438DD74A26EE84C000F3BC30 /* SceneDelegate.swift */,
 				438DD74C26EE84C000F3BC30 /* ViewController.swift */,
+				1D58E03426EFF4410072D1D0 /* BranchViewController.swift */,
 				438DD74E26EE84C000F3BC30 /* Main.storyboard */,
 				438DD75126EE84C200F3BC30 /* Assets.xcassets */,
 				438DD75326EE84C200F3BC30 /* LaunchScreen.storyboard */,
@@ -139,6 +142,7 @@
 			files = (
 				438DD74D26EE84C000F3BC30 /* ViewController.swift in Sources */,
 				438DD74926EE84C000F3BC30 /* AppDelegate.swift in Sources */,
+				1D58E03526EFF4410072D1D0 /* BranchViewController.swift in Sources */,
 				438DD74B26EE84C000F3BC30 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
