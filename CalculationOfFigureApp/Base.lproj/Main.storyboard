@@ -165,10 +165,10 @@
             </objects>
             <point key="canvasLocation" x="2991" y="75"/>
         </scene>
-        <!--View Controller-->
+        <!--Branch View Controller-->
         <scene sceneID="SCN-rv-gzF">
             <objects>
-                <viewController id="0F7-Os-eaZ" sceneMemberID="viewController">
+                <viewController id="0F7-Os-eaZ" customClass="BranchViewController" customModule="CalculationOfFigureApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nEX-aB-vQF">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
