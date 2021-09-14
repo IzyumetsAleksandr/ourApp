@@ -8,6 +8,7 @@
 import UIKit
 
 class CalculationsViewController: UIViewController {
+    
     @IBOutlet var textFieldOutlet: UITextField!
     
     override func viewDidLoad() {
