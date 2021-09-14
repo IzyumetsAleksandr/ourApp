@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -130,7 +129,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xtM-41-AyZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1502" y="75"/>
+            <point key="canvasLocation" x="1558" y="479"/>
         </scene>
         <!--RESULT-->
         <scene sceneID="3fv-mh-er1">
@@ -163,7 +162,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Q6-6c-ICO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2991" y="75"/>
+            <point key="canvasLocation" x="3039" y="479"/>
         </scene>
         <!--Branch View Controller-->
         <scene sceneID="SCN-rv-gzF">
@@ -172,13 +171,156 @@
                     <view key="view" contentMode="scaleToFill" id="nEX-aB-vQF">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Volume figure" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dCZ-er-CW2">
+                                <rect key="frame" x="16" y="20" width="288" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="2y0-DP-nm0">
+                                <rect key="frame" x="80.5" y="162" width="159" height="244"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f0v-ZY-sjZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="159" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Cube">
+                                            <color key="titleColor" red="0.35686278339999999" green="0.44705885649999999" blue="0.23921570180000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="figureButtonsButtonPressed:" destination="0F7-Os-eaZ" eventType="touchUpInside" id="Dka-Ps-hrX"/>
+                                            <segue destination="PQ0-Ae-D9V" kind="presentation" modalPresentationStyle="fullScreen" id="uSY-ej-Iq0"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QrX-qE-xLC">
+                                        <rect key="frame" x="0.0" y="52" width="159" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Cone">
+                                            <color key="titleColor" red="0.35686278339999999" green="0.44705885649999999" blue="0.23921570180000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ybL-3Z-ull">
+                                        <rect key="frame" x="0.0" y="104" width="159" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Cylinder">
+                                            <color key="titleColor" red="0.35686278339999999" green="0.44705885649999999" blue="0.23921570180000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gY4-7r-s1T">
+                                        <rect key="frame" x="0.0" y="156" width="159" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Sphere">
+                                            <color key="titleColor" red="0.35686278339999999" green="0.44705885649999999" blue="0.23921570180000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VkN-HU-Q5e">
+                                        <rect key="frame" x="0.0" y="208" width="159" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Rectangular prism">
+                                            <color key="titleColor" red="0.35686278339999999" green="0.44705885649999999" blue="0.23921570180000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hdo-e5-osI">
+                                <rect key="frame" x="120.5" y="452" width="79" height="44"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancelButtonPressed" destination="0F7-Os-eaZ" eventType="touchUpInside" id="bSM-TC-eQw"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="M9S-cX-zHS"/>
-                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                        <color key="backgroundColor" red="0.83137255909999996" green="0.86274516580000005" blue="0.70588237050000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="2y0-DP-nm0" firstAttribute="centerY" secondItem="nEX-aB-vQF" secondAttribute="centerY" id="1Ft-S7-JPH"/>
+                            <constraint firstItem="dCZ-er-CW2" firstAttribute="top" secondItem="M9S-cX-zHS" secondAttribute="top" constant="20" id="8E8-Wa-mE1"/>
+                            <constraint firstItem="hdo-e5-osI" firstAttribute="centerX" secondItem="nEX-aB-vQF" secondAttribute="centerX" id="Jnp-6X-Dl5"/>
+                            <constraint firstItem="2y0-DP-nm0" firstAttribute="centerX" secondItem="nEX-aB-vQF" secondAttribute="centerX" id="khR-oa-f3V"/>
+                            <constraint firstItem="M9S-cX-zHS" firstAttribute="trailing" secondItem="dCZ-er-CW2" secondAttribute="trailing" constant="16" id="n9d-JK-Tis"/>
+                            <constraint firstItem="M9S-cX-zHS" firstAttribute="bottom" secondItem="hdo-e5-osI" secondAttribute="bottom" constant="72" id="rDp-qE-Uj4"/>
+                            <constraint firstItem="dCZ-er-CW2" firstAttribute="leading" secondItem="M9S-cX-zHS" secondAttribute="leading" constant="16" id="zcU-Ox-3De"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outletCollection property="figureButtons" destination="f0v-ZY-sjZ" collectionClass="NSMutableArray" id="vKe-Xy-jqn"/>
+                        <outletCollection property="figureButtons" destination="QrX-qE-xLC" collectionClass="NSMutableArray" id="ZRN-BH-cP0"/>
+                        <outletCollection property="figureButtons" destination="ybL-3Z-ull" collectionClass="NSMutableArray" id="974-UB-ARX"/>
+                        <outletCollection property="figureButtons" destination="gY4-7r-s1T" collectionClass="NSMutableArray" id="bcc-Wi-4cQ"/>
+                        <outletCollection property="figureButtons" destination="VkN-HU-Q5e" collectionClass="NSMutableArray" id="FnP-Gb-22S"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cUO-Nf-9mh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="821" y="-250"/>
+            <point key="canvasLocation" x="819.375" y="-250.35211267605635"/>
+        </scene>
+        <!--Calculations View Controller-->
+        <scene sceneID="dCK-wG-mSG">
+            <objects>
+                <viewController id="PQ0-Ae-D9V" customClass="CalculationsViewController" customModule="CalculationOfFigureApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vTh-vO-Ca1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bC3-Pm-QJx">
+                                <rect key="frame" x="50" y="97" width="220" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hJu-pf-2Sp">
+                                <rect key="frame" x="120.5" y="452" width="79" height="44"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancelButtonPressed" destination="PQ0-Ae-D9V" eventType="touchUpInside" id="o0k-ou-0Mp"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HS0-Mv-K8i">
+                                <rect key="frame" x="50" y="221" width="220" height="38"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tl2-Cb-hHU">
+                                <rect key="frame" x="110" y="369" width="100" height="36"/>
+                                <color key="backgroundColor" red="0.60000002379999995" green="0.70588237050000002" blue="0.47843140360000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="eqR-Qo-wFt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Calculate">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="VbH-46-q0o"/>
+                        <color key="backgroundColor" red="0.83137255909999996" green="0.86274516580000005" blue="0.70588237050000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="tl2-Cb-hHU" firstAttribute="centerX" secondItem="vTh-vO-Ca1" secondAttribute="centerX" id="5Wb-Yp-zez"/>
+                            <constraint firstItem="bC3-Pm-QJx" firstAttribute="leading" secondItem="VbH-46-q0o" secondAttribute="leading" constant="50" id="JYH-JQ-HNN"/>
+                            <constraint firstItem="tl2-Cb-hHU" firstAttribute="centerX" secondItem="vTh-vO-Ca1" secondAttribute="centerX" id="KWv-Yr-EqD"/>
+                            <constraint firstItem="bC3-Pm-QJx" firstAttribute="top" secondItem="VbH-46-q0o" secondAttribute="top" constant="97" id="TIe-xe-pXr"/>
+                            <constraint firstItem="hJu-pf-2Sp" firstAttribute="top" secondItem="tl2-Cb-hHU" secondAttribute="bottom" constant="47" id="WAa-pL-sx3"/>
+                            <constraint firstItem="VbH-46-q0o" firstAttribute="bottom" secondItem="hJu-pf-2Sp" secondAttribute="bottom" constant="72" id="hGw-Sc-Eul"/>
+                            <constraint firstItem="VbH-46-q0o" firstAttribute="trailing" secondItem="bC3-Pm-QJx" secondAttribute="trailing" constant="50" id="mgS-A7-gth"/>
+                            <constraint firstItem="HS0-Mv-K8i" firstAttribute="leading" secondItem="VbH-46-q0o" secondAttribute="leading" constant="50" id="nmi-Gi-23P"/>
+                            <constraint firstItem="hJu-pf-2Sp" firstAttribute="centerX" secondItem="vTh-vO-Ca1" secondAttribute="centerX" id="qCQ-yS-xdB"/>
+                            <constraint firstItem="VbH-46-q0o" firstAttribute="trailing" secondItem="HS0-Mv-K8i" secondAttribute="trailing" constant="50" id="qJU-Z3-xEU"/>
+                            <constraint firstItem="HS0-Mv-K8i" firstAttribute="top" secondItem="bC3-Pm-QJx" secondAttribute="bottom" constant="90" id="vbd-Zc-pbV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textFieldOutlet" destination="bC3-Pm-QJx" id="5EC-1v-yd2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mg6-Hb-h99" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1576.875" y="-250.35211267605635"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="rv9-yO-CVY">
@@ -215,12 +357,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fhX-LC-YHA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2240.625" y="75"/>
+            <point key="canvasLocation" x="2295" y="479"/>
         </scene>
     </scenes>
-    <resources>
-        <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-    </resources>
 </document>

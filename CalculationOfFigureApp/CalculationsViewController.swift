@@ -1,5 +1,5 @@
 //
-//  BranchViewController.swift
+//  CalculationsViewController.swift
 //  CalculationOfFigureApp
 //
 //  Created by Andrey Ovchinnikov on 14.09.2021.
@@ -7,22 +7,19 @@
 
 import UIKit
 
-class BranchViewController: UIViewController {
-
-    @IBOutlet var figureButtons: [UIButton]!
-    
+class CalculationsViewController: UIViewController {
+    @IBOutlet var textFieldOutlet: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-       
+        
     }
     
     @IBAction func cancelButtonPressed() {
         dismiss(animated: true)
     }
     
-    @IBAction func figureButtonsButtonPressed(_ sender: UIButton) {
-    }
-    
+   
+
 }
