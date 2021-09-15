@@ -14,7 +14,7 @@ class CalculationsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
+        //simple3
     }
     
     @IBAction func cancelButtonPressed() {
