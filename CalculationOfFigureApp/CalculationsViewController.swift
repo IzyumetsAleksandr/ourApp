@@ -15,6 +15,8 @@ class CalculationsViewController: UIViewController {
         super.viewDidLoad()
 
         //simple3
+        //simple4
+        
     }
     
     @IBAction func cancelButtonPressed() {
